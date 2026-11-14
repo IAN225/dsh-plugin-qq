@@ -123,11 +123,12 @@ Common fields:
 {"set":{"inlineThreshold":360,"quoteThreshold":160,"splitDelayMs":700}}
 {"set":{"dnd":"at"}}
 {"set":{"dnd":"all","dndHours":2}}
+{"set":{"dnd":"at","dndHours":8}}
 {"set":{"uploadDirs":["C:/QQBot/media"],"downloadDir":"C:/QQBot/downloads"}}
 {"set":{"cacheMaxMb":1024,"mediaRetentionDays":30,"messageRetentionDays":30,"messageMaxPerChat":2000,"receiptRetentionDays":14,"receiptMax":2000}}
 ```
 
-DND modes: `off` = wake normally, `at` = only direct @/reply-bot messages can wake, `all` = store only. `all` requires `dndHours`. Long-active chats get a once-per-hour hint appended to an existing notification only.
+DND modes: `off` = wake normally, `at` = only direct @/reply-bot messages can wake, `all` = store only. `all` requires `dndHours`; both `at` and `all` accept `dndHours` to revert automatically. Long-active chats get a once-per-hour hint appended to an existing notification only.
 
 Whitelist changes require owner confirmation:
 

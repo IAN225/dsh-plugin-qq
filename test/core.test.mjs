@@ -147,6 +147,12 @@ test('settings inherit and DND duration validation', async () => {
   await assert.rejects(() => svc.settings({ target: 'group:123', set: { dnd: 'all' } }, a), /dndHours/u)
   await svc.settings({ target: 'group:123', set: { dnd: 'all', dndHours: 1 } }, a)
   assert.equal(svc.store.effectiveSettings('group:123').dnd, 'all')
+  await svc.settings({ target: 'group:123', set: { dnd: 'at', dndHours: 8 } }, a)
+  const timedAt = svc.store.effectiveSettings('group:123')
+  assert.equal(timedAt.dnd, 'at')
+  assert.ok(timedAt.dndUntil > Date.now())
+  svc.store.patchScopedSettings('group:123', { dndUntil: Date.now() - 1 })
+  assert.equal(svc.store.effectiveSettings('group:123').dnd, 'off')
   svc.store.close()
 })
 
