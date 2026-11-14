@@ -60,7 +60,7 @@ Two unrelated Windows mechanisms can block a local service install:
    - The dialog about Internet security settings blocking a file comes from a `Zone.Identifier` alternate data stream.
    - Open the archive's Properties and choose **Unblock**, or run:
      ```powershell
-     Unblock-File .\local-dsh-plugin-qq-0.2.5.tgz
+     Unblock-File .\ian225-dsh-plugin-qq-0.2.5.tgz
      ```
    - If files were extracted from the archive, unblock the extracted tree as well:
      ```powershell

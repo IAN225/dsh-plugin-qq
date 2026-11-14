@@ -1,7 +1,6 @@
 {
-  "name": "@local/dsh-plugin-qq",
+  "name": "@ian225/dsh-plugin-qq",
   "version": "0.2.5",
-  "private": true,
   "type": "module",
   "description": "QQ/OneBot channel for DeepSeek Harness with durable receipts, buffering and media support.",
   "scripts": {
@@ -34,5 +33,16 @@
   "license": "MIT",
   "engines": {
     "node": ">=22.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IAN225/dsh-plugin-qq.git"
+  },
+  "homepage": "https://github.com/IAN225/dsh-plugin-qq#readme",
+  "bugs": {
+    "url": "https://github.com/IAN225/dsh-plugin-qq/issues"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

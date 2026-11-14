@@ -42,7 +42,13 @@ The plugin also checks `QQ_CONFIG_FILE` and a package-local `config.local.json` 
 
 Protocol connection settings are local-only. Model-facing `qq_settings` never changes the URL, port or token.
 
-3. In DSH, open **Plugins > Add plugin** and choose the packaged `.tgz`, or select a local checkout during development. Enable the row named **QQ channel (OneBot)**. SnowLuma/NapCat are external services and are not bundled in the plugin package.
+3. Install from npm into the desktop profile:
+
+```powershell
+dsh plugin --profile desktop add @ian225/dsh-plugin-qq
+```
+
+Alternatively, open **Plugins > Add plugin** and paste `@ian225/dsh-plugin-qq`, choose the packaged `.tgz` release, or select a local checkout during development. Enable the row named **QQ channel (OneBot)**. SnowLuma/NapCat are external services and are not bundled in the plugin package.
 4. Start a new session and call any QQ tool once. That session becomes the account holder. A later session that calls a QQ tool takes over; the previous holder receives `该账号已被其他会话接管` on later calls and cannot reclaim the account by reconnecting.
 
 If the plugin is installed before the account is known, wait until OneBot is connected. The plugin obtains `self_id` through `get_login_info`.
