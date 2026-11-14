@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "QQ 接入（OneBot）",
+    "description": "通过 SnowLuma 或 NapCat 将 QQ 私聊、群聊和群临时会话接入 DSH。消息持久缓冲后以紧凑 receipt 投递，可用 qq_send 回复。"
+  }
+}

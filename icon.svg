@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-label="QQ channel">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2f80ed"/>
+      <stop offset="1" stop-color="#1f4fc4"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="url(#g)"/>
+  <path d="M26 36c0-7 6-13 13-13h50c7 0 13 6 13 13v31c0 7-6 13-13 13H56L37 97V80h-1c-6 0-10-5-10-11V36z" fill="#fff"/>
+  <circle cx="47" cy="51" r="5" fill="#2f80ed"/>
+  <circle cx="64" cy="51" r="5" fill="#2f80ed"/>
+  <circle cx="81" cy="51" r="5" fill="#2f80ed"/>
+  <path d="M78 86c10 4 18 1 25-5v13c0 5-4 9-9 9H82l-8 7v-8h-1c-5 0-9-4-9-9v-3c5 1 10 1 14-4z" fill="#b8cbff"/>
+</svg>

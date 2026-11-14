@@ -1,0 +1,35 @@
+# Local runtime data and secrets
+config.local.json
+config*.local.json
+config.json
+.env
+.env.*
+accounts/
+data/
+_test_data/
+_asar/
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+logs/
+*.log
+
+# Dependencies, generated packages and local binaries
+node_modules/
+vendor/
+dist/
+*.tgz
+*.zip
+*.7z
+*.tar
+*.tar.gz
+*.sha256
+
+# Local editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

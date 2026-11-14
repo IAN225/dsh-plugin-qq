@@ -1,0 +1,38 @@
+{
+  "name": "@local/dsh-plugin-qq",
+  "version": "0.2.5",
+  "private": true,
+  "type": "module",
+  "description": "QQ/OneBot channel for DeepSeek Harness with durable receipts, buffering and media support.",
+  "scripts": {
+    "test": "node --test --test-timeout=10000 test/*.test.mjs"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "locale/*.json",
+    "cordis.patch.yml",
+    "config.local.example.json",
+    "README.md",
+    "icon.svg",
+    "QUICKSTART.md",
+    "scripts"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml",
+      "platforms": [
+        "win32"
+      ]
+    }
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.5.0"
+  }
+}

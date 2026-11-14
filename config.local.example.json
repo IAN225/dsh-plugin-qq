@@ -1,0 +1,18 @@
+{
+  "account": "",
+  "owner": "",
+  "dataDir": "",
+  "onebot": {
+    "mode": "ws",
+    "url": "ws://127.0.0.1:3001/",
+    "httpUrl": "http://127.0.0.1:3000/",
+    "accessToken": "",
+    "listenHost": "127.0.0.1",
+    "listenPort": 5701,
+    "listenPath": "/onebot/events",
+    "reconnectMs": 1000,
+    "requestTimeoutMs": 30000
+  },
+  "autoImageMaxMb": 64,
+  "autoMediaMaxMb": 20
+}

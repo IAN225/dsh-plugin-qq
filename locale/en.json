@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "QQ channel (OneBot)",
+    "description": "Bridges QQ private, group and temporary chats into a DSH session through SnowLuma or NapCat. Messages are buffered durably, delivered as compact receipts, and answered with qq_send."
+  }
+}
