@@ -105,6 +105,10 @@ test('unbound backlog produces one summary notification', async () => {
   assert.equal(a.followups.length, 1)
   assert.match(a.wakes[0], /^\[QQ backlog\]/u)
   assert.match(a.wakes[0], /未处理批/u)
+  a.status = 'idle'
+  svc2.backlogNeeded = true
+  await svc2.tick()
+  assert.equal(a.followups.length, 1)
   svc2.store.close()
 })
 

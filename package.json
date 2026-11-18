@@ -1,6 +1,6 @@
 {
   "name": "@ian225/dsh-plugin-qq",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "type": "module",
   "description": "QQ/OneBot channel for DeepSeek Harness with durable receipts, buffering and media support.",
   "scripts": {
